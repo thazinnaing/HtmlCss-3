@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="light" width="350" height="400" src="https://www.assets.signify.com/is/image/PhilipsLighting/22e1aa6f994240808894a55d017da7c5?clipPathE=legacy_path&$pnglarge$" alt="light off">
+    <p>
+    <button type="button" onclick="lightFunction(1)">Light On</button>
+    <button type="button" onclick="lightFunction(0)">Light Off</button>
+    <script>
+        const lightFunction=(onoff)=>{
+            var pic;
+            if(onoff===0){
+                pic="https://www.assets.signify.com/is/image/PhilipsLighting/22e1aa6f994240808894a55d017da7c5?clipPathE=legacy_path&$pnglarge$"
+
+            }
+            else if(onoff===1){
+                pic="https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg"
+
+            }
+            document.getElementById("light").src=pic;
+
+        }
+    </script>
+</p>
+</body>
+</html>
